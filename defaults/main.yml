@@ -1,0 +1,6 @@
+---
+
+docker_ftpd_container_name: 'ftpd'
+
+ftpusers_directory: '{{ data_mount_root }}/surveillance'
+ftp_config_directory: '{{ ftpusers_directory }}/config'

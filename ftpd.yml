@@ -1,0 +1,9 @@
+- name: Deploy ftpd including fileserver and webserver roles
+  hosts: ftpdservers
+  remote_user: root
+  become: True
+  tasks:
+    - import_role:
+        name: common 
+    - import_role:
+        name: ftpd
